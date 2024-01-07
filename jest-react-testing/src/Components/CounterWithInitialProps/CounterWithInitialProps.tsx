@@ -1,7 +1,10 @@
 import React from "react";
+import { CounterProps } from "./CounterWithInitialProps.types";
 
-export const Counter = () => {
-  const [count, setCount] = React.useState(0);
+export const CounterWithInitialProps = (props: CounterProps) => {
+  const { initialCount } = props;
+
+  const [count, setCount] = React.useState(initialCount);
 
   const increment = () => setCount((prev) => prev + 1);
   const decrement = () => setCount((prev) => prev - 1);

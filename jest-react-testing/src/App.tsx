@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Counter } from './Components/Counter/Counter';
+import { CounterWithInitialProps } from './Components/CounterWithInitialProps/CounterWithInitialProps';
 // import { Application } from './Components/Application/Application';
 // import { Skills } from './Components/Skills/Skills';
 // import { skills } from './lib/constants';
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       {/* <Application /> */}
       {/* <Skills skills={skills}/> */}
-      <Counter />
+      <CounterWithInitialProps initialCount={0} />
     </div>
   );
 }
