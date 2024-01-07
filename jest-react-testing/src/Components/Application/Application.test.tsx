@@ -25,6 +25,9 @@ describe('Application', () => {
     });
     expect(paragraphElement).toBeInTheDocument();
 
+    const closeElement = screen.getByTitle('close');
+    expect(closeElement).toBeInTheDocument();
+
     const imageElement = screen.getByAltText('a person with a laptop');
     expect(imageElement).toBeInTheDocument();
 
