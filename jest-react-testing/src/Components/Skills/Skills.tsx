@@ -6,6 +6,12 @@ export const Skills = (props: SkillsProps) => {
 
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoggedIn(true)
+    }, 500);
+  }, []);
+
   return (
     <>
       <ul>
