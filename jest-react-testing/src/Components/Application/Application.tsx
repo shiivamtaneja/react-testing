@@ -13,6 +13,10 @@ export const Application = () => {
           <textarea name="bio" id="bio"></textarea>
         </div>
         <div>
+          {/**
+            * <label htmlFor="job-location">Name</label>
+            * Test fails since 2 elements have the same label = 'Name' 
+            */}
           <label htmlFor="job-location">Job Location</label>
           <select id="job-location">
             <option value="">Select a country</option>

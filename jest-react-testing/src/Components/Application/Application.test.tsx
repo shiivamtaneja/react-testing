@@ -24,6 +24,13 @@ describe('Application', () => {
     });
     expect(nameElement).toBeInTheDocument();
 
+    // Get's that element which is of the type input and has label 'Name'
+    const nameElementGetByLabelText = screen.getByLabelText('Name', {
+      // Without this selector tag, it gives error since 2 elements have the same label = 'Name'.
+      selector: 'input'
+    });
+    expect(nameElementGetByLabelText).toBeInTheDocument();
+
     const bioElement = screen.getByRole('textbox', {
       name: 'Bio'
     });
@@ -34,6 +41,9 @@ describe('Application', () => {
 
     const termsElement = screen.getByRole('checkbox');
     expect(termsElement).toBeInTheDocument();
+
+    const termsElementGetByLabelText = screen.getByLabelText('I agree to the terms and conditions');
+    expect(termsElementGetByLabelText).toBeInTheDocument();
 
     const submitButtonElement = screen.getByRole('button');
     expect(submitButtonElement).toBeInTheDocument();
