@@ -1,6 +1,6 @@
 import { render, RenderOptions } from '@testing-library/react'
 import { ReactElement } from 'react'
-import { AppProvider } from './Providers/AppProvider'
+import { AppProvider } from './providers/AppProvider'
 
 const customRender = (
   ui: ReactElement,
@@ -9,3 +9,4 @@ const customRender = (
 
 export * from '@testing-library/react'
 export { customRender as render }
+

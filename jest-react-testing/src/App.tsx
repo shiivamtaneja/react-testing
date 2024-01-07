@@ -1,11 +1,11 @@
 import './App.css';
 
-import { MuiMode } from './Components/Mui/MuiMode';
-import { AppProvider } from './Providers/AppProvider';
-// import { CounterKeyboardInteractions } from './Components/CounterKeyboardInteractions/CounterKeyboardInteractions';
-// import { CounterWithInitialProps } from './Components/CounterWithInitialProps/CounterWithInitialProps';
-// import { Application } from './Components/Application/Application';
-// import { Skills } from './Components/Skills/Skills';
+import { MuiMode } from './components/mui/MuiMode';
+import { AppProvider } from './providers/AppProvider';
+// import { CounterKeyboardInteractions } from './components/counterKeyboardInteractions/CounterKeyboardInteractions';
+// import { CounterWithInitialProps } from './components/counterWithInitialProps/CounterWithInitialProps';
+// import { Application } from './components/application/Application';
+// import { Skills } from './components/skills/Skills';
 // import { skills } from './lib/constants';
 
 function App() {
