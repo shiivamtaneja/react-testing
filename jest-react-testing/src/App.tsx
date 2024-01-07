@@ -1,6 +1,7 @@
 import './App.css';
 
 import { MuiMode } from './components/mui/MuiMode';
+import { Users } from './components/users/Users';
 import { AppProvider } from './providers/AppProvider';
 // import { CounterKeyboardInteractions } from './components/counterKeyboardInteractions/CounterKeyboardInteractions';
 // import { CounterWithInitialProps } from './components/counterWithInitialProps/CounterWithInitialProps';
@@ -19,6 +20,7 @@ function App() {
     <AppProvider>
       <div className='App'>
         <MuiMode />
+        <Users />
       </div>
     </AppProvider>
   );
