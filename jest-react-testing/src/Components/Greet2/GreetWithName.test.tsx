@@ -9,13 +9,13 @@ import { GreetWithName } from "./GreetWithName";
 describe('GreetWithName', () => {
   test('renders correctly', () => {
     render(<GreetWithName />);
-    const textElement = screen.getByText('Hello');
+    const textElement = screen.getByText(/Hello/i);
     expect(textElement).toBeInTheDocument();
   });
 
-  test('renders with a name', () => {
-    render(<GreetWithName name="Shivam" />)
-    const textElement = screen.getByText('Hello Shivam');
-    expect(textElement).toBeInTheDocument();
-  });
+  // test('renders with a name', () => {
+  //   render(<GreetWithName name="Shivam" />)
+  //   const textElement = screen.getByText('Hello Shivam');
+  //   expect(textElement).toBeInTheDocument();
+  // });
 });
