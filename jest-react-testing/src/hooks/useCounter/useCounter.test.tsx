@@ -3,9 +3,7 @@ import { useCounter } from './useCounter';
 
 describe('useCounter', () => {
   test('should render the default initial count of 0', () => {
-    const { result } = renderHook(useCounter, {
-      initialProps: {}
-    });
+    const { result } = renderHook(useCounter);
 
     expect(result.current.count).toBe(0);
   });
