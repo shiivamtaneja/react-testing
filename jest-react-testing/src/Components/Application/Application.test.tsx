@@ -19,6 +19,12 @@ describe('Application', () => {
     });
     expect(sectionHeading).toBeInTheDocument();
 
+    const paragraphElement = screen.getByText('All fields are mandatory', {
+      // It also accepts selector tag just like getByLabelText
+      selector: 'p'
+    });
+    expect(paragraphElement).toBeInTheDocument();
+
     const nameElement = screen.getByRole('textbox', {
       name: 'Name'
     });
